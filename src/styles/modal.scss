@@ -1,0 +1,51 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  padding: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
+
+  cursor: zoom-out;
+
+  &__content {
+    border: 4px solid #fff;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    height: 85vh;
+  }
+
+  &__caption {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  &__button-close {
+    display: none;
+    border: 3px solid #fff;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px 8px;
+    position: absolute;
+    top: 80px;
+    right: 163px;
+    color: $page-text-color;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+
+    &:hover,
+    &:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}

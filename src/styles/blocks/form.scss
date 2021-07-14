@@ -1,0 +1,48 @@
+.form {
+  flex-basis: 411px;
+
+  @media (max-width: 720px) {
+    flex-basis: 100%;
+  }
+
+  &__field {
+    box-sizing: border-box;
+    background: #f7f9ff;
+    border: 2px solid transparent;
+    border-radius: 8px;
+
+    color: #000;
+    outline: none;
+
+    display: block;
+    height: 48px;
+    width: 100%;
+
+    margin: 0 0 16px;
+    padding: 14px 16px;
+
+    &--last {
+      margin-bottom: 32px;
+    }
+
+    &::placeholder {
+      color: $page-text-color-light;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    &:hover {
+      border-color: #ccd0e0;
+    }
+
+    &:focus {
+      border-color: $page-color-accent;
+    }
+
+    &--area {
+      font-family: inherit;
+      height: 144px;
+      resize: none;
+    }
+  }
+}

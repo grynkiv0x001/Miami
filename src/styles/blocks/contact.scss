@@ -1,0 +1,54 @@
+.contact {
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1020px;
+
+    @media (max-width: 720px) {
+      flex-direction: column;
+    }
+  }
+
+  &__column {
+    @media (max-width: 719px) and (min-width: 500px) {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__info {
+    margin: 0 0 24px;
+
+    &--last {
+      margin-bottom: 32px;
+
+      @media (max-width: 870px) {
+        display: none;
+      }
+    }
+
+    &--tablet {
+      display: none;
+
+      @media (max-width: 870px) {
+        display: block;
+      }
+    }
+
+    &-title {
+      color: $page-text-color-light;
+      font-size: 14px;
+      line-height: 27px;
+
+      margin: 0 0 8px;
+    }
+
+    &-link {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+}
