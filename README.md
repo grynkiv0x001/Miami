@@ -1,7 +1,7 @@
 # Miami landing page
 
 * **Stack technologies:** HTML5, SCSS, JS
-* **Features:** Fully responsive web layout, adaptive for different devices and screens
+* **Features:** fully responsive web layout, adaptive for different devices and screens
 * **Methods used:** flexbox and css-grid for responsive development, BEM-methodology for better scaling
 * **Links to the:** [DEMO][demo] | [DESIGN][figma]
 
