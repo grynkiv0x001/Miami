@@ -3,16 +3,18 @@
 const modal = document.querySelector('.modal');
 
 const images = document.querySelectorAll('.place__photo');
-const modalImage = document.querySelector('.modal__content');
-const captionText = document.querySelector('.modal__caption');
+const modalImage = document.querySelector('.modal__content-image');
 
 images.forEach(image => {
   image.onclick = function() {
-    modal.style.display = 'block';
-    modalImage.src = this.src;
-    captionText.innerHTML = this.alt;
+    if (window.innerWidth >= 1500) {
+      modal.style.display = 'block';
+      modalImage.src = this.src;
 
-    document.body.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden';
+    } else {
+      return 0;
+    }
   };
 });
 
